@@ -12,6 +12,7 @@ const Portfolio = () => {
   ];
 
   return (
+    <section id="services">
     <div className="section">
       <h2 className="section-title">Portfolio</h2>
       <div className="portfolio-grid">
@@ -24,6 +25,7 @@ const Portfolio = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

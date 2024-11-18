@@ -17,6 +17,7 @@ const ContactForm = () => {
   };
 
   return (
+    <section id="contact">
     <div className="section">
       <h2 className="section-title">Let's Work Together</h2>
       <form onSubmit={handleSubmit}>
@@ -46,6 +47,7 @@ const ContactForm = () => {
         <button type="submit" className="button">Send</button>
       </form>
     </div>
+    </section>
   );
 };
 

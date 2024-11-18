@@ -1,8 +1,14 @@
 import React from 'react';
+import { motion } from "framer-motion";
+import star1 from "./assets/star-1.svg";
+import star2 from "./assets/star-2.svg";
+import star3 from "./assets/star-3.svg";
+import star4 from "./assets/star-4.svg";
 import './Home.css';
 
 const Home = () => {
   return (
+    <section id="home">
     <div className="home-section">
       <div className="home-content">
         <div className="hero-container">
@@ -41,7 +47,7 @@ const Home = () => {
  >
   <h2>Dorcas Kendi</h2>
    <br></br>
-   Frontend Developer
+   <h1>Frontend Developer</h1>
    </motion.h1>
    <div className="button-container">
         <button className="cont-button">Contact Me</button>
@@ -53,6 +59,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
