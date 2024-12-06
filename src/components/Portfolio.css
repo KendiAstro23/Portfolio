@@ -34,11 +34,13 @@
   }
   
   .portfolio-icon {
-    font-size: 3rem;
+    width: 50px; /* Adjust logo size */
+    height: 50px;
     margin-bottom: 10px;
     animation: bounce 2s infinite;
   }
   
+  /* Text Styles */
   h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -57,30 +59,5 @@
     50% {
       transform: translateY(-10px);
     }
-  }
-  
-  /* Logo Colors */
-  .react {
-    color: #61dafb; /* React blue */
-  }
-  
-  .javascript {
-    color: #f7df1e; /* JavaScript yellow */
-  }
-  
-  .html {
-    color: #e34c26; /* HTML5 orange */
-  }
-  
-  .css {
-    color: #1572b6; /* CSS3 blue */
-  }
-  
-  .nodejs {
-    color: #68a063; /* Node.js green */
-  }
-  
-  .git {
-    color: #f05032; /* Git orange */
   }
   

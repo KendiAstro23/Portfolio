@@ -1,31 +1,32 @@
-import React from 'react';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGit } from 'react-icons/fa';
-import './Portfolio.css';
+import React from "react";
+import "./Portfolio.css";
 
-const Portfolio = () => {
+const PortfolioSection = () => {
   const technologies = [
-    { icon: <FaReact className="tech-icon" />, name: "React", description: "I use React for building interactive UIs." },
-    { icon: <FaJs className="tech-icon" />, name: "JavaScript", description: "I write dynamic scripts with JavaScript." },
-    { icon: <FaHtml5 className="tech-icon" />, name: "HTML5", description: "HTML5 for semantic and accessible designs." },
-    { icon: <FaCss3Alt className="tech-icon" />, name: "CSS3", description: "Styling with CSS3 for modern layouts." },
-    { icon: <FaNodeJs className="tech-icon" />, name: "Node.js", description: "Node.js for backend API services." },
-    { icon: <FaGit className="tech-icon" />, name: "Git", description: "Git for version control and collaboration." },
+    { id: "react", name: "React", description: "Building dynamic UI components.", icon: "/image2vector.svg" },
+    { id: "javascript", name: "JavaScript", description: "Core logic and interactivity.", icon: "/image2vector (1).svg" },
+    { id: "html", name: "HTML5", description: "Structuring content for the web.", icon: "/image2vector (2).svg" },
+    { id: "css", name: "CSS3", description: "Styling websites beautifully.", icon: "/image2vector (3).svg" },
+    { id: "nodejs", name: "Node.js", description: "Backend JavaScript runtime.", icon: "/image2vector (4).svg" },
+    { id: "git", name: "Git", description: "Version control and collaboration.", icon: "/image2vector (5).svg" },
   ];
 
   return (
+    <section id="services">
     <div className="portfolio-section">
       <h2 className="section-title">Portfolio</h2>
       <div className="portfolio-grid">
-        {technologies.map((tech, index) => (
-          <div key={index} className="portfolio-item">
-            <div className="portfolio-icon">{tech.icon}</div>
+        {technologies.map((tech) => (
+          <div className="portfolio-item" key={tech.id}>
+            <img src={tech.icon} alt={`${tech.name} logo`} className="portfolio-icon" />
             <h3>{tech.name}</h3>
             <p>{tech.description}</p>
           </div>
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;

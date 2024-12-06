@@ -29,7 +29,8 @@ const MyWorks = () => {
   ];
 
   return (
-    <section className="my-works">
+    <section id="works">
+    <div className="my-works">
       <h2>My Works</h2>
       <p>Here are some of the projects I've worked on to showcase my skills:</p>
       <div className="projects-container">
@@ -43,6 +44,7 @@ const MyWorks = () => {
             </a>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
