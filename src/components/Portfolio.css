@@ -1,0 +1,86 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+    padding: 50px;
+    background-color: #55ce0f;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: #6b636a;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 15%;
+    min-width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #eceff1;
+  }
+  
+  /* Animation for icons */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Logo Colors */
+  .react {
+    color: #61dafb; /* React blue */
+  }
+  
+  .javascript {
+    color: #f7df1e; /* JavaScript yellow */
+  }
+  
+  .html {
+    color: #e34c26; /* HTML5 orange */
+  }
+  
+  .css {
+    color: #1572b6; /* CSS3 blue */
+  }
+  
+  .nodejs {
+    color: #68a063; /* Node.js green */
+  }
+  
+  .git {
+    color: #f05032; /* Git orange */
+  }
+  

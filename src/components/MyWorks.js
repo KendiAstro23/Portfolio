@@ -8,21 +8,21 @@ const MyWorks = () => {
       id: 1,
       title: "Project One",
       description: "A brief description of Project One.",
-      image: "./assets/work1.jpg", // Example image path
+      image: "work1.jpg", // Example image path
       link: "https://project-one-link.com",
     },
     {
       id: 2,
       title: "Project Two",
       description: "A brief description of Project Two.",
-      image: "./assets/work2.jpg",
+      image: "work2.jpg",
       link: "https://project-two-link.com",
     },
     {
       id: 3,
       title: "Project Three",
       description: "A brief description of Project Three.",
-      image: "./assets/work3.jpg",
+      image: "work3.jpg",
       link: "https://project-three-link.com",
     },
     // Add more projects as needed
